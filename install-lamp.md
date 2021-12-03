@@ -1,19 +1,27 @@
 # Install Required
 
 #
+
 ## Windows(WAMP)
 
 Download and Install from [HERE](https://www.apachefriends.org/download.html)
 
 #
+
 ## Linux(LAMP)
 
+```
 sudo apt install apache2 php mariadb-server
-http://localhost/
+```
+
+open http://localhost/
+
+```
 systemctl status apache2
 systemctl status mariadb.service
 sudo systemctl restart apache2
 sudo systemctl restart mariadb.service
+```
 
 sudo mysql_secure_installation
 
