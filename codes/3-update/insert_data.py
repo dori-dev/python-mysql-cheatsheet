@@ -11,7 +11,7 @@ database_connection = connector.connect(
 
 cursor = database_connection.cursor()
 
-# insert to faculty table
+# -------------------- insert to faculty table --------------------
 SQL = """
 INSERT INTO faculty(
     faculty_ID,
@@ -30,15 +30,15 @@ cursor.execute(SQL, value)
 # insert many values
 values = [
     (2, 'electronic', 'Dr Mohammadi', '1390', 'Isfahan'),
-    (3, 'mathematics', 'Dr Karimi', '1400', 'Shiraz'),
+    (3, 'mathematics', 'Dr Karimi', '1380', 'Shiraz'),
     (4, 'architecture', 'Mr Akbari', '1399', 'Tehran'),
-    (6, 'data science', 'Mr Shahmoradi', '1390', 'Mashhad'),
-    (7, 'chemistry', 'Dr Sharifi', '1390', 'Tehran'),
+    (6, 'data science', 'Mr Shahmoradi', '1400', 'Mashhad'),
+    (7, 'chemistry', 'Dr Sharifi', '1395', 'Tehran'),
 ]
 cursor.executemany(SQL, values)
 
 
-# insert to field table
+# -------------------- insert to field table --------------------
 SQL = """
 INSERT INTO faculty(
     field_ID,
@@ -65,7 +65,7 @@ values = [
 cursor.executemany(SQL, values)
 
 
-# insert to professors table
+# -------------------- insert to professors table --------------------
 SQL = """
 INSERT INTO faculty(
     faculty_ID,
@@ -79,7 +79,7 @@ VALUES(%s, %s, %s, %s, %s)
 cursor.executemany(SQL, values)
 
 
-# insert to students table
+# -------------------- insert to students table --------------------
 SQL = """
 INSERT INTO faculty(
     faculty_ID,
