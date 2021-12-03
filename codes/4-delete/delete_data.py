@@ -15,5 +15,4 @@ cursor = database_connection.cursor()
 SQL = "DELETE FROM students WHERE average<=15"
 cursor.execute(SQL)
 
-
 database_connection.commit()

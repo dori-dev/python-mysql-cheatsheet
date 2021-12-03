@@ -1,6 +1,5 @@
 """update data from table
 """
-
 from mysql import connector
 
 database_connection = connector.connect(
