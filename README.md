@@ -82,3 +82,12 @@ install mysql connector for python.
 ```
 python -m pip install mysql-connector
 ```
+
+
+
+#
+## Links
+
+Download Source Code: [Click Here](https://github.com/dori-dev/python-mysql-cheatsheet/archive/refs/heads/main.zip)
+
+My Github Acount: [Click Here](https://github.com/dori-dev/)
