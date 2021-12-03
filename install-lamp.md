@@ -54,3 +54,7 @@ sudo systemctl restart apache2
 ```
 
 Open With Browser: http://localhost/phpmyadmin/
+
+```
+python -m pip install mysql-connector
+```
