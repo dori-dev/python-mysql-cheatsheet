@@ -42,7 +42,7 @@ sudo mysql_secure_installation
 use mysql.
 
 ```
-sud mysql -u root -p
+sudo mysql -u root -p
 ```
 
 add mysql user.
