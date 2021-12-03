@@ -1,3 +1,5 @@
+"""read data from database tables
+"""
 from mysql import connector
 
 database_connection = connector.connect(
