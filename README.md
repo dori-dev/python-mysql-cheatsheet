@@ -1,6 +1,6 @@
 # Python MYSQL CheatSheet
 
-python mysql cheatsheet.
+Python mysql cheatsheet.
 
 #
 
@@ -16,9 +16,13 @@ Download and Install from [HERE](https://www.apachefriends.org/download.html)
 
 ## Linux(LAMP)
 
+Install Packages.
+
 ```
 sudo apt install apache2 php mariadb-server
 ```
+
+Setup Packages.
 
 ```
 systemctl status apache2
@@ -29,13 +33,19 @@ sudo systemctl restart mariadb.service
 
 Open With Browser: http://localhost/
 
+setup mysql.
+
 ```
 sudo mysql_secure_installation
 ```
 
+use mysql.
+
 ```
 sud mysql -u root -p
 ```
+
+add mysql user.
 
 ```sql
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
@@ -43,14 +53,20 @@ GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+change access level apache directory.
+
 ```
 cd /var/www/
 sudo chown -R user:user html
 ```
 
+install phpmyadmin.
+
 ```
 sudo apt install phpmyadmin
 ```
+
+setup phpmyadmin.
 
 ```
 cd /var/www/html
@@ -60,6 +76,8 @@ sudo systemctl restart apache2
 ```
 
 Open With Browser: http://localhost/phpmyadmin/
+
+install mysql connector for python.
 
 ```
 python -m pip install mysql-connector
