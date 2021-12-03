@@ -5,8 +5,8 @@ from mysql import connector
 
 database_connection = connector.connect(
     host='localhost',
-    user='salar',
-    passwd='52212057',
+    user='user',
+    passwd="password",
     database='university'
 )
 

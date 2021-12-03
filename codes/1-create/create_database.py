@@ -5,8 +5,8 @@ from mysql import connector
 # connection to sever
 connection = connector.connect(
     host='localhost',
-    user='salar',
-    passwd="52212057"
+    user='user',
+    passwd="password"
 )
 
 # make cursor

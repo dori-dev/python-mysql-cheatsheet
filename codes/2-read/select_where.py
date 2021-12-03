@@ -12,8 +12,8 @@ def show_sql_result(sql: str):
 
 database_connection = connector.connect(
     host="localhost",
-    user="salar",
-    passwd="52212057",
+    user="user",
+    passwd="password",
     database="py_university"
 )
 
