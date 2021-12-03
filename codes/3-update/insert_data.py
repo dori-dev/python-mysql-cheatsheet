@@ -1,6 +1,9 @@
-"""Insert many values to database tables
+"""insert many values to database tables
 """
 from mysql import connector
+
+# TODO insert too many data
+
 
 database_connection = connector.connect(
     host='localhost',
@@ -37,5 +40,5 @@ values = [
 cursor.executemany(SQL, values)
 
 
-# for change in database values
+# for save changes in database
 database_connection.commit()
