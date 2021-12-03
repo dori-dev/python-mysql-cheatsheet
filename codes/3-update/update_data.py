@@ -14,7 +14,7 @@ cursor = database_connection.cursor()
 # update students table
 SQL = """
 UPDATE students
-SET entrance_year = entrance_year+1
+SET entering_year = entering_year-1
 WHERE field_ID=1
 """
 cursor.execute(SQL)

@@ -29,17 +29,17 @@ cursor = database_connection.cursor()
 # Extract the list of software students
 print("------------------------- 6 -------------------------")
 SQL = """
-SELECT student_ID, student_name, student_family
+SELECT student_ID, name, family
 FROM students, field
 WHERE students.field_ID = field.field_ID and orientation='software'
 """
 show_sql_result(SQL)
 
-# Extract the list of computer school courses
+# Extract the list of computer faculty courses
 print("------------------------- 7 -------------------------")
 SQL = """
-SELECT field_ID, orientation, course
+SELECT field_ID, orientation, grade
 FROM field, faculty
-WHERE field.faculty_ID = faculty.faculty_ID and faculty_name='computer faculty'
+WHERE field.faculty_ID = faculty.faculty_ID and faculty.name='computer'
 """
 show_sql_result(SQL)
