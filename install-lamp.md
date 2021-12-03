@@ -21,27 +21,36 @@ sudo systemctl restart apache2
 sudo systemctl restart mariadb.service
 ```
 
-Open with browser: http://localhost/
+Open With Browser: http://localhost/
 
-
+```
 sudo mysql_secure_installation
+```
 
+```
 sud mysql -u root -p
+```
 
+```sql
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON _ . _ TO 'user'@'localhost';
 FLUSH PRIVILEGES;
+```
 
-cd /var/www/html
+```
+cd /var/www/
 sudo chown -R user:user html
+```
 
+```
 sudo apt install phpmyadmin
+```
 
-http://localhost/phpmyadmin/
-
+```
 cd /var/www/html
-cd /usr/share/phpmyadmin
+ls /usr/share/phpmyadmin
 ln -s /usr/share/phpmyadmin .
-http://localhost/phpmyadmin/
 sudo systemctl restart apache2
-http://localhost/phpmyadmin/
+```
+
+Open With Browser: http://localhost/phpmyadmin/
