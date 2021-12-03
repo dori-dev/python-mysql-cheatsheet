@@ -1,4 +1,5 @@
-"""select data from two table
+"""select data from two table with where(conditions)
+first see `select_where.py`!
 """
 from mysql import connector
 

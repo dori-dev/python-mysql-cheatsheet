@@ -1,11 +1,16 @@
+"""select data from table with where(conditions)
+"""
 from mysql import connector
 
 
 def show_sql_result(sql: str):
+    """show result of sql script
+
+    Args:
+        sql (str): sql script
+    """
     cursor.execute(sql)
-
     result = cursor.fetchall()
-
     for record in result:
         print(record)
 
@@ -21,8 +26,7 @@ cursor = database_connection.cursor()
 
 # Extract the list of all students in Tehran.
 print("------------------------- 1 -------------------------")
-SQL = "SELECT student_name, student_family FROM students WHERE address='tehran'"
-# TODO convert student_name, student_family to name, family
+SQL = "SELECT name, family FROM students WHERE address='tehran'"
 show_sql_result(SQL)
 
 
