@@ -1,6 +1,5 @@
 """create table in university database
 """
-
 from mysql import connector
 
 database_connection = connector.connect(
