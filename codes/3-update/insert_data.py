@@ -2,9 +2,6 @@
 """
 from mysql import connector
 
-# TODO insert too many data
-
-
 database_connection = connector.connect(
     host='localhost',
     user='user',
