@@ -16,13 +16,13 @@ Download and Install from [HERE](https://www.apachefriends.org/download.html)
 
 ## Linux(LAMP)
 
-Install Packages.
+install Packages.
 
 ```
 sudo apt install apache2 php mariadb-server
 ```
 
-Setup Packages.
+setup Packages.
 
 ```
 systemctl status apache2
