@@ -7,7 +7,7 @@ database_connection = connector.connect(
     host='localhost',
     user='user',
     passwd="password",
-    database='py_university'
+    database='university'
 )
 
 cursor = database_connection.cursor()
