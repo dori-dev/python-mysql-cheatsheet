@@ -14,14 +14,15 @@ Download and Install from [HERE](https://www.apachefriends.org/download.html)
 sudo apt install apache2 php mariadb-server
 ```
 
-open http://localhost/
-
 ```
 systemctl status apache2
 systemctl status mariadb.service
 sudo systemctl restart apache2
 sudo systemctl restart mariadb.service
 ```
+
+Open with browser: http://localhost/
+
 
 sudo mysql_secure_installation
 
