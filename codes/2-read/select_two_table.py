@@ -1,13 +1,16 @@
-"""Select data from two table
+"""select data from two table
 """
 from mysql import connector
 
 
 def show_sql_result(sql: str):
+    """show result of sql script
+
+    Args:
+        sql (str): sql script
+    """
     cursor.execute(sql)
-
     result = cursor.fetchall()
-
     for record in result:
         print(record)
 
