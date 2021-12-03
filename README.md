@@ -1,2 +1,2 @@
-# python mysql cheatsheet
-Python MYSQL CheatSheet.
+# Python MYSQL CheatSheet
+python mysql cheatsheet.
