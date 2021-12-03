@@ -1,0 +1,9 @@
+Task
+1- Extract the list of all students in Tehran.
+2- Extract the list of university professors who are faculty members.
+3- Extract the list of conditional students.
+4- Extract the list of students with a grade point average above 17 in order of grade point average.
+5- Extract the list of professors with doctoral degrees
+6- Extract the list of software students
+7- Extract the list of computer school courses
+
